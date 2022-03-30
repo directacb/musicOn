@@ -1,22 +1,9 @@
-// for(var i=0; i<document.querySelectorAll(".drum").length; i++){
-//     document.querySelectorAll(".drum")[i].addEventListener("click",function () {
-//         var buttonInnterHTML = this.innerHTML;
-//         makeSound(buttonInnterHTML); 
-//         buttonAnimation(buttonInnterHTML);
-    
-//     });
-//     }
+
 
     $("button").click(function(event){
         makeSound(this.innerHTML);
         buttonAnimation(this.innerHTML);
     });
-
-    // document.addEventListener("keydown", function(event) {
-    // makeSound(event.key);
-    //  buttonAnimation(event.key);
-    
-    // });
 
     $(document).keydown(function(event){
       var pressedKey = event.key;
